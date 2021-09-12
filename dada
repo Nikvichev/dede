@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class deposit {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double deposit = Double.parseDouble(scanner.nextLine());
+        int termDeposit = Integer.parseInt(scanner.nextLine());
+        double depositParcentage = Double.parseDouble(scanner.nextLine());
+
+        double priceDeposit =  depositParcentage / 100;
+
+        double finalPrice = deposit + termDeposit * ((deposit * priceDeposit) / 12);
+
+        System.out.println( finalPrice);
+
+
+    }
+}
